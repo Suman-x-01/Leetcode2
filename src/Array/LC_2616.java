@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class LC_2616 {
     static void main() {
-        int arr[] = {10, 1, 2, 7, 1, 3};
+        int []arr = {10, 1, 2, 7, 1, 3};
 //        1,1,2,3,7,10
         int p = 2;
         int i = minimizeMax(arr, p);
