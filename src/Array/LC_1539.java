@@ -6,7 +6,7 @@ public class LC_1539 {
     }
 
     public static int findKthPositive(int[] arr, int k) {
-
+//2,3,4,7,11
         int left=0,right= arr.length-1;
         while (left<=right){
             int mid=(left+right)/2;
