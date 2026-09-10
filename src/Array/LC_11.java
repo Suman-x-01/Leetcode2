@@ -19,7 +19,7 @@ public class LC_11 {
                 r--;
 
             }else{
-                int temp=r*(r-l);
+                int temp=height[r]*(r-l);
                 if (countMax<temp) countMax=temp;
 
                 r--;
