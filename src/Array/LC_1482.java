@@ -9,7 +9,7 @@ public class LC_1482 {
 
     public static int minDays(int[] bloomDay, int m, int k) {
         int maxdays = 0;
-        if (bloomDay.length < (m * k)) {
+        if (bloomDay.length < (long)m * k) {
             return -1;
         }
 
