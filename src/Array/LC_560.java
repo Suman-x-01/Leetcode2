@@ -24,7 +24,7 @@ public class LC_560 {
 
         Map<Integer,Integer>map=new HashMap<>();
         int pre=0, count=0;
-        map.put(0,1)
+        map.put(0,1);
         for(int data:nums) {
             pre += data;
             if (map.containsKey(pre-k)){
