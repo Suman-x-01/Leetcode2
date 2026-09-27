@@ -40,7 +40,7 @@ public static boolean wordPattern(String pattern, String s) {
     Map<String,Character>words=new HashMap<>();
     Map<Character,String>ptrn=new HashMap<>();
 
-////    set values into map
+//   set values into map
 //    for (int i=0;i<pattern.length();i++){
 //        words.put(wordsArray[i],pattern.charAt(i));
 //        ptrn.put(pattern.charAt(i),wordsArray[i]);
