@@ -8,27 +8,31 @@ public class LC_150 {
     }
     public static int evalRPN(String[] tokens) {
         Stack<Integer> stack=new Stack<>();
-        for(int i=0;i<tokens.length;i++){
-            if(tokens[i].equals("+")){
-                int first= stack.pop();
-                int second= stack.pop();
-                stack.push(first+second);
-            } else if(tokens[i].equals("-")){
-                int first= stack.pop();
-                int second= stack.pop();
-                stack.push(second-first);
-            } else if(tokens[i].equals("*")){
-                int first= stack.pop();
-                int second= stack.pop();
-                stack.push(first*second);
-            } else if(tokens[i].equals("/")){
-                int first= stack.pop();
-                int second= stack.pop();
-                stack.push(second/first);
+        for (String token : tokens) {
+            switch (token) {
+                case "+" -> {
+                    int first = stack.pop();
+                    int second = stack.pop();
+                    stack.push(first + second);
+                }
+                case "-" -> {
+                    int first = stack.pop();
+                    int second = stack.pop();
+                    stack.push(second - first);
+                }
+                case "*" -> {
+                    int first = stack.pop();
+                    int second = stack.pop();
+                    stack.push(first * second);
+                }
+                case "/" -> {
+                    int first = stack.pop();
+                    int second = stack.pop();
+                    stack.push(second / first);
+                }
+                default -> stack.push(Integer.parseInt(token));
             }
-            else {
-                stack.push(Integer.parseInt(tokens[i]));
-            }        }
+        }
         return stack.pop();
     }
 
